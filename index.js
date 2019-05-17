@@ -35,7 +35,7 @@ var getPlatforms = function (projectName) {
     // TODO: use async fs.exists
     isAdded : fs.existsSync('platforms/ios'),
     iconsPath : 'platforms/ios/' + projectName + xcodeFolder,
-        icons : [
+    icons : [
       { name: 'icon-20.png',             size : 20   },
       { name: 'icon-20@2x.png',          size : 40   },
       { name: 'icon-20@3x.png',          size : 60   },
@@ -63,6 +63,7 @@ var getPlatforms = function (projectName) {
       { name: 'icon-44@2x.png',          size : 88   },
       { name: 'icon-86@2x.png',          size : 172  },
       { name: 'icon-98@2x.png',          size : 196  }
+    ]
   });
   platforms.push({
     name : 'android',
